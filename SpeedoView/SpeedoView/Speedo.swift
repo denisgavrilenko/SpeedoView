@@ -15,6 +15,12 @@ public class Speedo: UIView {
     private var speedoLine: SpeedoLine!
     private var lastFrame = CGRect.zero
     
+    public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        
+        setValue(100)
+    }
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         
